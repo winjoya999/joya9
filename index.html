@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAYA9 – Bangladesh's #1 Cricket Betting & Casino Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">JAYA<span>9</span></div>
+  <div class="nav-links">
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('sports')">Sports</a>
+    <a href="#" onclick="showPage('casino')">Casino</a>
+    <a href="#" onclick="showPage('promotions')">Promotions</a>
+    <a href="#" onclick="showPage('about')">About</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+    <a href="#" class="nav-cta" onclick="showPage('home')">Join Now</a>
+  </div>
+  <div class="hamburger" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="showPage('home');toggleMobileMenu()">Home</a>
+  <a href="#" onclick="showPage('sports');toggleMobileMenu()">Sports</a>
+  <a href="#" onclick="showPage('casino');toggleMobileMenu()">Casino</a>
+  <a href="#" onclick="showPage('promotions');toggleMobileMenu()">Promotions</a>
+  <a href="#" onclick="showPage('about');toggleMobileMenu()">About</a>
+  <a href="#" onclick="showPage('contact');toggleMobileMenu()">Contact</a>
+</div>
+
+<!-- ==================== PAGE: HOME ==================== -->
+<div class="page active" id="page-home">
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">🏏 BPL 2025 – Live Betting Available</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🎰 Welcome Bonus up to ৳20,000</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">⚡ Instant bKash & Nagad Withdrawals</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🏆 IPL 2025 Season – Best Odds</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">💎 VIP Program – Exclusive Rewards</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🎯 ICC World Cup Markets Open</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🔐 Licensed & Secured – 256-bit SSL</span>
+      <span class="ticker-sep">★</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="ticker-item">🏏 BPL 2025 – Live Betting Available</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🎰 Welcome Bonus up to ৳20,000</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">⚡ Instant bKash & Nagad Withdrawals</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🏆 IPL 2025 Season – Best Odds</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">💎 VIP Program – Exclusive Rewards</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🎯 ICC World Cup Markets Open</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">🔐 Licensed & Secured – 256-bit SSL</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🟢 Live Now – BPL 2025</div>
+      <h1 class="hero-title">
+        BET ON<br><span class="gold">CRICKET</span><br>WIN BIG
+      </h1>
+      <p class="hero-sub">
+        Bangladesh's most trusted platform for <strong>cricket betting & live casino</strong>. Powered by local payments, Bengali support, and 100,000+ players.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('promotions')">🎁 Claim ৳20,000 Bonus</button>
+        <button class="btn-secondary" onclick="showPage('sports')">🏏 Explore Sports</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-num">100K+</div>
+          <div class="stat-label">Active Players</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">৳20K</div>
+          <div class="stat-label">Welcome Bonus</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Bengali Support</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Games</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="cricket-ball">
+        <div class="ball-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <span class="section-label">Why Choose Jaya9</span>
+    <h2 class="section-title">BUILT FOR<br>BANGLADESHI PLAYERS</h2>
+    <p class="section-sub">Every feature designed around how Bangladesh bets, pays, and plays.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏏</span>
+        <div class="feature-title">Cricket-First Platform</div>
+        <p class="feature-desc">Comprehensive coverage of BPL, IPL, ICC World Cup, T20 leagues, and every major international tournament. Ball-by-ball live betting with the sharpest odds in Bangladesh.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <div class="feature-title">Instant Payments</div>
+        <p class="feature-desc">Deposit and withdraw in minutes via bKash, Nagad, and Rocket. No hidden fees, no delays — your winnings hit your mobile wallet fast.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔐</span>
+        <div class="feature-title">Licensed & Secure</div>
+        <p class="feature-desc">Operating under Curaçao & PAGCOR gaming licenses with 256-bit SSL encryption. Your data, funds, and privacy are completely protected.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📱</span>
+        <div class="feature-title">Mobile-First Design</div>
+        <p class="feature-desc">Optimized for low-bandwidth 3G connections across Bangladesh. The native Android & iOS app gives you full access to betting and casino games anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🗣️</span>
+        <div class="feature-title">Bengali Support 24/7</div>
+        <p class="feature-desc">Our customer team speaks your language — Bengali and English support available 24 hours a day via live chat, WhatsApp, and email.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💎</span>
+        <div class="feature-title">VIP Rewards Program</div>
+        <p class="feature-desc">Climb through VIP tiers to unlock personal account managers, higher withdrawal limits, tailored bonuses, and exclusive tournament access.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPORTS PREVIEW -->
+  <section class="sports-section">
+    <span class="section-label">Sports Betting</span>
+    <h2 class="section-title">EVERY SPORT.<br>EVERY MARKET.</h2>
+    <p class="section-sub">From the BPL to the Premier League — hundreds of live markets across all major sports.</p>
+    <div class="sports-grid">
+      <div class="sport-card featured">
+        <span class="sport-emoji">🏏</span>
+        <div class="sport-name">Cricket</div>
+        <div class="sport-badge">Most Popular</div>
+      </div>
+      <div class="sport-card">
+        <span class="sport-emoji">⚽</span>
+        <div class="sport-name">Football</div>
+        <div class="sport-badge">Live Betting</div>
+      </div>
+      <div class="sport-card">
+        <span class="sport-emoji">🏀</span>
+        <div class="sport-name">Basketball</div>
+      </div>
+      <div class="sport-card">
+        <span class="sport-emoji">🎾</span>
+        <div class="sport-name">Tennis</div>
+      </div>
+      <div class="sport-card featured">
+        <span class="sport-emoji">🤺</span>
+        <div class="sport-name">Kabaddi</div>
+        <div class="sport-badge">Local Leagues</div>
+      </div>
+      <div class="sport-card">
+        <span class="sport-emoji">🎮</span>
+        <div class="sport-name">Esports</div>
+        <div class="sport-badge">CS2 • Dota2</div>
+      </div>
+      <div class="sport-card">
+        <span class="sport-emoji">🥊</span>
+        <div class="sport-name">MMA</div>
+      </div>
+      <div class="sport-card">
+        <span class="sport-emoji">🏉</span>
+        <div class="sport-name">Rugby</div>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem">
+      <button class="btn-primary" onclick="showPage('sports')">View All Sports →</button>
+    </div>
+  </section>
+
+  <!-- CASINO PREVIEW -->
+  <section class="casino-section">
+    <span class="section-label">Online Casino</span>
+    <h2 class="section-title">LIVE DEALERS.<br>500+ GAMES.</h2>
+    <p class="section-sub">HD streaming from professional studios. Real dealers, real excitement — anytime, anywhere.</p>
+    <div class="games-row">
+      <div class="game-card">
+        <div class="game-bg game-bg-1">🃏</div>
+        <div class="game-overlay">
+          <div class="game-type">Live Casino</div>
+          <div class="game-name">Teen Patti</div>
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="game-bg game-bg-2">🎡</div>
+        <div class="game-overlay">
+          <div class="game-type">Live Dealer</div>
+          <div class="game-name">Roulette</div>
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="game-bg game-bg-3">🐉</div>
+        <div class="game-overlay">
+          <div class="game-type">Live Casino</div>
+          <div class="game-name">Dragon Tiger</div>
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="game-bg game-bg-4">🎰</div>
+        <div class="game-overlay">
+          <div class="game-type">Slots</div>
+          <div class="game-name">Sweet Bonanza</div>
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="game-bg game-bg-5">🃟</div>
+        <div class="game-overlay">
+          <div class="game-type">Table Game</div>
+          <div class="game-name">Baccarat</div>
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="game-bg game-bg-6">🔱</div>
+        <div class="game-overlay">
+          <div class="game-type">Slots</div>
+          <div class="game-name">Gates of Olympus</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem">
+      <button class="btn-primary" onclick="showPage('casino')">Explore All Games →</button>
+    </div>
+  </section>
+
+  <!-- PAYMENTS -->
+  <section class="payments-section">
+    <span class="section-label">Payment Methods</span>
+    <h2 class="section-title">DEPOSIT &<br>WITHDRAW FAST</h2>
+    <p class="section-sub">Support for all major Bangladeshi mobile banking and international payment options.</p>
+    <div class="payments-grid">
+      <div class="payment-chip"><span>📱</span> bKash</div>
+      <div class="payment-chip"><span>💳</span> Nagad</div>
+      <div class="payment-chip"><span>🚀</span> Rocket</div>
+      <div class="payment-chip"><span>🏦</span> Bank Transfer</div>
+      <div class="payment-chip"><span>💰</span> UPI</div>
+      <div class="payment-chip"><span>₿</span> Bitcoin</div>
+      <div class="payment-chip"><span>💎</span> USDT</div>
+      <div class="payment-chip"><span>Ξ</span> Ethereum</div>
+      <div class="payment-chip"><span>💳</span> Paytm</div>
+    </div>
+    <p style="color:var(--muted); margin-top:1.5rem; font-size:0.9rem;">⚡ Withdrawals processed in minutes. Minimum deposit: ৳200. No hidden fees.</p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps-section">
+    <span class="section-label">Getting Started</span>
+    <h2 class="section-title">START WINNING<br>IN 3 STEPS</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">Register Free</div>
+        <p class="step-desc">Create your account in under 2 minutes with just your phone number. No complex verification needed to get started.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-title">Deposit via bKash</div>
+        <p class="step-desc">Add funds instantly using bKash, Nagad, Rocket, or any supported method. Minimum deposit is only ৳200.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-title">Claim Bonus & Bet</div>
+        <p class="step-desc">Your welcome bonus is instantly credited. Pick your favourite match or game and start winning right away.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUSES -->
+  <section class="bonuses-section">
+    <span class="section-label">Promotions</span>
+    <h2 class="section-title">MASSIVE<br>BONUSES AWAIT</h2>
+    <div class="bonuses-grid">
+      <div class="bonus-card">
+        <div class="bonus-tag">New Players</div>
+        <div class="bonus-amount">৳20,000</div>
+        <div class="bonus-title">Welcome Bonus</div>
+        <p class="bonus-desc">Get a 100% match on your first deposit up to ৳20,000. Your first steps into Jaya9 should be rewarded big.</p>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-tag">Weekly</div>
+        <div class="bonus-amount">15%</div>
+        <div class="bonus-title">Sports Reload</div>
+        <p class="bonus-desc">Every week, sports bettors receive a 15% reload bonus on their deposits. Keep betting, keep earning.</p>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-tag">Casino</div>
+        <div class="bonus-amount">Free</div>
+        <div class="bonus-title">Live Casino Spins</div>
+        <p class="bonus-desc">Casino players receive free spins and live game incentives. Enjoy slots, live roulette, and more with bonus credits.</p>
+      </div>
+    </div>
+    <div style="margin-top:2rem">
+      <button class="btn-primary" onclick="showPage('promotions')">View All Promotions →</button>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <span class="section-label">Player Reviews</span>
+    <h2 class="section-title">TRUSTED BY<br>100,000+ PLAYERS</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Jaya9 is the best cricket betting site in Bangladesh. The odds on BPL are amazing and I got my winnings in my bKash in less than 5 minutes. Absolutely love it!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Rafiq Ahmed</div>
+            <div class="author-loc">Narayanganj</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">The Bengali customer support is incredible. I had a payment issue at midnight and they resolved it within 10 minutes via WhatsApp. No other platform offers this.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Sadia Begum</div>
+            <div class="author-loc">Chittagong</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Gates of Olympus on Jaya9 paid out a massive jackpot for me. The slots library is huge and the site works perfectly even on my slow connection in Sylhet.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">K</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Karim Hassan</div>
+            <div class="author-loc">Sylhet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust-section">
+    <span class="section-label">Security & Trust</span>
+    <h2 class="section-title">YOUR SAFETY IS<br>OUR PRIORITY</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">🛡️</span>
+        <div class="trust-title">256-bit SSL</div>
+        <p class="trust-desc">Bank-grade encryption protects every transaction and personal data on the platform.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">📜</span>
+        <div class="trust-title">Licensed Platform</div>
+        <p class="trust-desc">Fully licensed under Curaçao eGaming and PAGCOR international gaming regulations.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✅</span>
+        <div class="trust-title">Fair Play Certified</div>
+        <p class="trust-desc">All games powered by certified RNG from world-class providers like Pragmatic Play & Evolution Gaming.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🎮</span>
+        <div class="trust-title">Responsible Gaming</div>
+        <p class="trust-desc">Set deposit limits, cooling off periods, and self-exclusion tools. Gaming should always be fun. 18+ only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <h2>READY TO <span style="color:var(--gold)">WIN</span>?</h2>
+    <p>Join 100,000+ Bangladeshi players. Register in 2 minutes. Claim your ৳20,000 welcome bonus.</p>
+    <button class="btn-primary" style="font-size:1.1rem; padding:16px 42px;">Create Free Account →</button>
+  </div>
+
+</div>
+
+<!-- ==================== PAGE: SPORTS ==================== -->
+<div class="page" id="page-sports">
+  <div class="page-hero">
+    <h1>🏏 SPORTS <span style="color:var(--gold)">BETTING</span></h1>
+    <p>Live odds on cricket, football, kabaddi, tennis, basketball, esports and more — all with in-play betting.</p>
+  </div>
+
+  <section style="background:var(--dark)">
+    <span class="section-label">Cricket</span>
+    <h2 class="section-title">CRICKET BETTING<br>HEADQUARTERS</h2>
+    <p class="section-sub">Jaya9 is built around cricket — the heart of Bangladesh. We cover every format, every league, every ball.</p>
+    <div class="leagues-grid" style="margin-top:2.5rem">
+      <div class="league-card">
+        <div class="league-header">
+          <div class="league-logo">🏆</div>
+          <div>
+            <div class="league-name">Bangladesh Premier League</div>
+            <div class="league-type">Domestic T20</div>
+          </div>
+        </div>
+        <div class="live-indicator"><div class="live-dot"></div> LIVE BETTING</div>
+        <div class="league-markets">
+          <span class="market-tag">Match Winner</span>
+          <span class="market-tag">Top Batsman</span>
+          <span class="market-tag">Ball-by-Ball</span>
+          <span class="market-tag">Total Runs</span>
+        </div>
+      </div>
+      <div class="league-card">
+        <div class="league-header">
+          <div class="league-logo">🎯</div>
+          <div>
+            <div class="league-name">Indian Premier League</div>
+            <div class="league-type">T20 League</div>
+          </div>
+        </div>
+        <div class="live-indicator"><div class="live-dot"></div> LIVE BETTING</div>
+        <div class="league-markets">
+          <span class="market-tag">Match Odds</span>
+          <span class="market-tag">Top Bowler</span>
+          <span class="market-tag">Sixes Market</span>
+          <span class="market-tag">Series Winner</span>
+        </div>
+      </div>
+      <div class="league-card">
+        <div class="league-header">
+          <div class="league-logo">🌏</div>
+          <div>
+            <div class="league-name">ICC World Cup</div>
+            <div class="league-type">International</div>
+          </div>
+        </div>
+        <div class="league-markets">
+          <span class="market-tag">Tournament Winner</span>
+          <span class="market-tag">Player of Tournament</span>
+          <span class="market-tag">Group Stage</span>
+        </div>
+      </div>
+      <div class="league-card">
+        <div class="league-header">
+          <div class="league-logo">🏏</div>
+          <div>
+            <div class="league-name">T20 World Cup</div>
+            <div class="league-type">ICC Tournament</div>
+          </div>
+        </div>
+        <div class="league-markets">
+          <span class="market-tag">Match Result</span>
+          <span class="market-tag">Top Run Scorer</span>
+          <span class="market-tag">Most Wickets</span>
+        </div>
+      </div>
+      <div class="league-card">
+        <div class="league-header">
+          <div class="league-logo">🦁</div>
+          <div>
+            <div class="league-name">The Ashes</div>
+            <div class="league-type">Test Series</div>
+          </div>
+        </div>
+        <div class="league-markets">
+          <span class="market-tag">Series Winner</span>
+          <span class="market-tag">Match Result</span>
+          <span class="market-tag">Innings Runs</span>
+        </div>
+      </div>
+      <div class="league-card">
+        <div class="league-header">
+          <div class="league-logo">🌟</div>
+          <div>
+            <div class="league-name">Big Bash League</div>
+            <div class="league-type">Australian T20</div>
+          </div>
+        </div>
+        <div class="league-markets">
+          <span class="market-tag">Match Winner</span>
+          <span class="market-tag">First Over Runs</span>
+          <span class="market-tag">Method of Dismissal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--dark-2)">
+    <span class="section-label">Other Sports</span>
+    <h2 class="section-title">MORE SPORTS.<br>MORE MARKETS.</h2>
+    <div class="sports-grid" style="margin-top:2rem">
+      <div class="sport-card"><span class="sport-emoji">⚽</span><div class="sport-name">Football</div><div class="sport-badge">EPL • La Liga • UCL</div></div>
+      <div class="sport-card"><span class="sport-emoji">🏀</span><div class="sport-name">Basketball</div><div class="sport-badge">NBA • FIBA</div></div>
+      <div class="sport-card"><span class="sport-emoji">🎾</span><div class="sport-name">Tennis</div><div class="sport-badge">Grand Slams • ATP</div></div>
+      <div class="sport-card featured"><span class="sport-emoji">🤺</span><div class="sport-name">Kabaddi</div><div class="sport-badge">Pro Kabaddi</div></div>
+      <div class="sport-card"><span class="sport-emoji">🎮</span><div class="sport-name">Esports</div><div class="sport-badge">CS2 • Dota 2</div></div>
+      <div class="sport-card"><span class="sport-emoji">🥊</span><div class="sport-name">MMA / Boxing</div><div class="sport-badge">UFC • ONE FC</div></div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>PLACE YOUR FIRST <span style="color:var(--gold)">BET</span></h2>
+    <p>Start with as little as ৳10–৳50. New players get ৳20,000 welcome bonus.</p>
+    <button class="btn-primary">Register & Bet Now →</button>
+  </div>
+</div>
+
+<!-- ==================== PAGE: CASINO ==================== -->
+<div class="page" id="page-casino">
+  <div class="page-hero">
+    <h1>🎰 LIVE <span style="color:var(--gold)">CASINO</span></h1>
+    <p>500+ games from top providers. HD live dealers. Real money thrills — available 24/7 on desktop and mobile.</p>
+  </div>
+
+  <section class="casino-page" style="background:var(--dark)">
+    <span class="section-label">Live Dealer Games</span>
+    <h2 class="section-title">PLAY LIVE WITH<br>REAL DEALERS</h2>
+    <p class="section-sub">Professional dealers stream from state-of-the-art studios in HD. Chat with dealers in Bengali and English.</p>
+    <div class="games-row" style="margin-top:2.5rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr))">
+      <div class="game-card"><div class="game-bg game-bg-1">🃏</div><div class="game-overlay"><div class="game-type">Live Dealer</div><div class="game-name">Teen Patti</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-2">🔄</div><div class="game-overlay"><div class="game-type">Live Dealer</div><div class="game-name">Andar Bahar</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-3">🐉</div><div class="game-overlay"><div class="game-type">Live Dealer</div><div class="game-name">Dragon Tiger</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-4">🎡</div><div class="game-overlay"><div class="game-type">Live Dealer</div><div class="game-name">Roulette</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-5">🃟</div><div class="game-overlay"><div class="game-type">Live Dealer</div><div class="game-name">Baccarat</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-6">🎲</div><div class="game-overlay"><div class="game-type">Live Dealer</div><div class="game-name">Sic Bo</div></div></div>
+    </div>
+  </section>
+
+  <section style="background:var(--dark-2)">
+    <span class="section-label">Slots & Jackpots</span>
+    <h2 class="section-title">PROGRESSIVE<br>JACKPOT SLOTS</h2>
+    <p class="section-sub">From classic fruit machines to modern megaways. Jackpots that keep growing until you hit the big one.</p>
+    <div class="games-row" style="margin-top:2.5rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr))">
+      <div class="game-card"><div class="game-bg game-bg-1">🍬</div><div class="game-overlay"><div class="game-type">Slots • Pragmatic</div><div class="game-name">Sweet Bonanza</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-2">⚡</div><div class="game-overlay"><div class="game-type">Slots • Pragmatic</div><div class="game-name">Gates of Olympus</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-3">🌟</div><div class="game-overlay"><div class="game-type">Slots • Pragmatic</div><div class="game-name">Starlight Princess</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-4">💎</div><div class="game-overlay"><div class="game-type">Slots • Classic</div><div class="game-name">Mega Moolah</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-5">🔱</div><div class="game-overlay"><div class="game-type">Slots • NetEnt</div><div class="game-name">Starburst</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-6">🐲</div><div class="game-overlay"><div class="game-type">Slots • Red Tiger</div><div class="game-name">Dragon's Luck</div></div></div>
+    </div>
+  </section>
+
+  <section style="background:var(--dark)">
+    <span class="section-label">Table Games</span>
+    <h2 class="section-title">CLASSIC TABLE<br>GAMES</h2>
+    <div class="games-row" style="margin-top:2.5rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr))">
+      <div class="game-card"><div class="game-bg game-bg-2">♠️</div><div class="game-overlay"><div class="game-type">Table Game</div><div class="game-name">Blackjack</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-1">🃟</div><div class="game-overlay"><div class="game-type">Table Game</div><div class="game-name">Poker</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-3">🐟</div><div class="game-overlay"><div class="game-type">Arcade</div><div class="game-name">Fish Shooting</div></div></div>
+      <div class="game-card"><div class="game-bg game-bg-5">🎯</div><div class="game-overlay"><div class="game-type">Lottery</div><div class="game-name">Keno</div></div></div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>500+ GAMES<br><span style="color:var(--gold)">WAITING FOR YOU</span></h2>
+    <p>Join now and get free spins on your favourite slots with the welcome bonus.</p>
+    <button class="btn-primary">Start Playing Now →</button>
+  </div>
+</div>
+
+<!-- ==================== PAGE: PROMOTIONS ==================== -->
+<div class="page" id="page-promotions">
+  <div class="page-hero">
+    <h1>🎁 BONUSES &<br><span style="color:var(--gold)">PROMOTIONS</span></h1>
+    <p>Exclusive offers for new players, weekly bonuses for regulars, and VIP rewards for our top players.</p>
+  </div>
+
+  <section style="background:var(--dark)">
+    <span class="section-label">Current Offers</span>
+    <h2 class="section-title">CLAIM YOUR<br>REWARDS TODAY</h2>
+    <div class="promo-grid">
+      <div class="promo-card">
+        <div class="promo-banner promo-banner-1">🎰<div class="promo-banner-text">100% UP TO ৳20,000</div></div>
+        <div class="promo-body">
+          <div class="promo-title">Welcome Bonus</div>
+          <p class="promo-desc">New players only. Get a 100% match on your first deposit up to ৳20,000. The perfect start to your Jaya9 journey. Minimum deposit ৳200.</p>
+          <div class="promo-meta">
+            <span class="promo-expiry">⏳ New players only</span>
+            <button class="btn-sm">Claim Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-banner promo-banner-2">🏏<div class="promo-banner-text">15% WEEKLY RELOAD</div></div>
+        <div class="promo-body">
+          <div class="promo-title">Sports Weekly Reload</div>
+          <p class="promo-desc">Existing sports bettors receive a 15% reload bonus every Monday. Keep your cricket betting funded with weekly boosts straight to your account.</p>
+          <div class="promo-meta">
+            <span class="promo-expiry">⏳ Every Monday</span>
+            <button class="btn-sm">Opt In</button>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-banner promo-banner-3">🎡<div class="promo-banner-text">FREE SPINS</div></div>
+        <div class="promo-body">
+          <div class="promo-title">Casino Free Spins</div>
+          <p class="promo-desc">Casino players receive free spins on selected slot titles including Sweet Bonanza and Gates of Olympus. No wagering requirements on winnings up to ৳500.</p>
+          <div class="promo-meta">
+            <span class="promo-expiry">⏳ Weekly offer</span>
+            <button class="btn-sm">Get Spins</button>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-banner promo-banner-4">💎<div class="promo-banner-text">VIP EXCLUSIVE</div></div>
+        <div class="promo-body">
+          <div class="promo-title">VIP Loyalty Program</div>
+          <p class="promo-desc">Every bet earns VIP points. Climb through Bronze, Silver, Gold, and Diamond tiers. Higher tiers unlock personal managers, cashback, and exclusive tournaments.</p>
+          <div class="promo-meta">
+            <span class="promo-expiry">⏳ Ongoing</span>
+            <button class="btn-sm">Join VIP</button>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-banner promo-banner-5">👥<div class="promo-banner-text">REFER A FRIEND</div></div>
+        <div class="promo-body">
+          <div class="promo-title">Referral Bonus</div>
+          <p class="promo-desc">Invite your friends using your unique referral code. Earn ৳500 for each friend who registers and makes their first deposit. No limit on referrals.</p>
+          <div class="promo-meta">
+            <span class="promo-expiry">⏳ Ongoing</span>
+            <button class="btn-sm">Refer Friends</button>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-banner promo-banner-6">🏆<div class="promo-banner-text">CASH PRIZES</div></div>
+        <div class="promo-body">
+          <div class="promo-title">BPL Tournament Contest</div>
+          <p class="promo-desc">During the Bangladesh Premier League season, compete in our prediction contest. Top 10 players win cash prizes of up to ৳50,000 in the prize pool.</p>
+          <div class="promo-meta">
+            <span class="promo-expiry">⏳ BPL Season 2025</span>
+            <button class="btn-sm">Enter Contest</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>DON'T MISS<br><span style="color:var(--gold)">YOUR BONUS</span></h2>
+    <p>Register today and claim the ৳20,000 welcome bonus before it expires.</p>
+    <button class="btn-primary">Register & Claim Bonus →</button>
+  </div>
+</div>
+
+<!-- ==================== PAGE: ABOUT ==================== -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <h1>ABOUT <span style="color:var(--gold)">JAYA9</span></h1>
+    <p>Bangladesh's cricket-first betting platform. Built by Bangladeshis, for Bangladeshis since 2022.</p>
+  </div>
+
+  <section style="background:var(--dark)">
+    <div class="about-grid">
+      <div>
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">CRICKET ISN'T JUST<br>A SPORT HERE</h2>
+        <p style="color:var(--muted); font-size:1.05rem; line-height:1.9; margin-bottom:1.5rem;">
+          Jaya9 was founded in 2022 with a single mission: to give Bangladeshi cricket fans the world-class betting experience they deserve. We noticed that global platforms didn't understand the local culture, couldn't accept bKash or Nagad, and didn't offer Bengali support.
+        </p>
+        <p style="color:var(--muted); font-size:1.05rem; line-height:1.9;">
+          We built Jaya9 from the ground up for Bangladesh — with local payment methods, Bengali-speaking support, BDT as the primary currency, and a cricket-first approach to every market we offer.
+        </p>
+        <div class="about-stats-grid">
+          <div class="about-stat">
+            <div class="about-stat-num">2022</div>
+            <div class="about-stat-label">Founded</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">100K+</div>
+            <div class="about-stat-label">Players</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">500+</div>
+            <div class="about-stat-label">Games</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">24/7</div>
+            <div class="about-stat-label">Support</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Our Journey</span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-title">Jaya9 Launches</div>
+            <p class="timeline-desc">Platform goes live with cricket betting, bKash integration, and Bengali language support. First 1,000 players onboarded in week one.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-title">Casino & Slots Added</div>
+            <p class="timeline-desc">Live dealer games, 200+ slots, and jackpot titles integrated through partnerships with Pragmatic Play and Evolution Gaming.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-title">Mobile App Launch</div>
+            <p class="timeline-desc">Native Android and iOS apps released. Low-bandwidth optimization enables smooth play even on 3G connections across rural Bangladesh.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-title">100,000 Players Milestone</div>
+            <p class="timeline-desc">Jaya9 surpasses 100,000 active registered players. VIP program launched. Cryptocurrency payment support added.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--dark-2)">
+    <span class="section-label">Our Partners</span>
+    <h2 class="section-title">WORLD-CLASS<br>GAME PROVIDERS</h2>
+    <p class="section-sub">We partner with the industry's most trusted names to deliver verified fair play and premium content.</p>
+    <div class="payments-grid" style="margin-top:2rem">
+      <div class="payment-chip">🎰 Pragmatic Play</div>
+      <div class="payment-chip">🎲 Evolution Gaming</div>
+      <div class="payment-chip">🌟 NetEnt</div>
+      <div class="payment-chip">🔴 Red Tiger</div>
+      <div class="payment-chip">🎯 Microgaming</div>
+      <div class="payment-chip">💎 Play'n GO</div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>JOIN THE<br><span style="color:var(--gold)">JAYA9 FAMILY</span></h2>
+    <p>100,000+ players can't be wrong. Register today and claim your welcome bonus.</p>
+    <button class="btn-primary">Get Started Today →</button>
+  </div>
+</div>
+
+<!-- ==================== PAGE: CONTACT ==================== -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <h1>CONTACT <span style="color:var(--gold)">US</span></h1>
+    <p>Our Bengali and English support team is available 24/7. We typically respond within minutes.</p>
+  </div>
+
+  <section style="background:var(--dark)">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title">WE'RE HERE<br>FOR YOU</h2>
+        <p style="color:var(--muted); margin-bottom:2rem; line-height:1.8;">
+          Have a question, issue, or feedback? Reach out through any of our support channels. Our team speaks Bengali and English.
+        </p>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-item-title">Live Chat</div>
+            <div class="contact-item-val">Available 24/7 on our website and app. Average response time: under 2 minutes.</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-item-title">WhatsApp</div>
+            <div class="contact-item-val">Message us on WhatsApp anytime. Fast responses in Bengali and English.</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-item-title">Email</div>
+            <div class="contact-item-val">support@jaya9bangladesh.com — We respond within 4 hours.</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-item-title">Telephone</div>
+            <div class="contact-item-val">Call us or send an SMS. Support available in 15 languages including Bengali, English, and Hindi.</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-family:var(--font-display); font-size:1.8rem; letter-spacing:1px; margin-bottom:1.75rem;">SEND A MESSAGE</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+880 XXXX XXXXXX">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Topic</label>
+          <select>
+            <option>Account & Registration</option>
+            <option>Deposits & Withdrawals</option>
+            <option>Bonuses & Promotions</option>
+            <option>Technical Issues</option>
+            <option>Sports Betting</option>
+            <option>Casino Games</option>
+            <option>Responsible Gaming</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea placeholder="Describe your issue or question in detail..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%; justify-content:center" onclick="submitForm()">Send Message →</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--dark-2)">
+    <span class="section-label">Responsible Gaming</span>
+    <h2 class="section-title">PLAY SMART.<br>STAY IN CONTROL.</h2>
+    <p class="section-sub">Jaya9 is committed to responsible gaming. All tools are available in your account settings.</p>
+    <div class="trust-grid" style="margin-top:2rem">
+      <div class="trust-item">
+        <span class="trust-icon">⏰</span>
+        <div class="trust-title">Deposit Limits</div>
+        <p class="trust-desc">Set daily, weekly, or monthly deposit limits to stay in control of your spending.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🛑</span>
+        <div class="trust-title">Self-Exclusion</div>
+        <p class="trust-desc">Temporarily or permanently exclude yourself from the platform at any time.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">☕</span>
+        <div class="trust-title">Cooling-Off Period</div>
+        <p class="trust-desc">Take a break for 24 hours, 7 days, or 30 days with our cooling-off feature.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🔞</span>
+        <div class="trust-title">Age Verification</div>
+        <p class="trust-desc">Jaya9 is strictly for players aged 18 and above. All accounts are age-verified.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">JAYA9</div>
+      <p class="footer-desc">Bangladesh's leading cricket betting and live casino platform. Built for Bangladeshi players with local payment methods, Bengali support, and cricket-first markets since 2022.</p>
+      <div class="footer-socials">
+        <div class="social-btn">📘</div>
+        <div class="social-btn">📸</div>
+        <div class="social-btn">💬</div>
+        <div class="social-btn">📺</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Sports</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="showPage('sports')">Cricket Betting</a></li>
+        <li><a href="#" onclick="showPage('sports')">Football Betting</a></li>
+        <li><a href="#" onclick="showPage('sports')">Kabaddi</a></li>
+        <li><a href="#" onclick="showPage('sports')">Tennis</a></li>
+        <li><a href="#" onclick="showPage('sports')">Esports</a></li>
+        <li><a href="#" onclick="showPage('sports')">Live Betting</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Casino</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="showPage('casino')">Live Dealer</a></li>
+        <li><a href="#" onclick="showPage('casino')">Slot Games</a></li>
+        <li><a href="#" onclick="showPage('casino')">Teen Patti</a></li>
+        <li><a href="#" onclick="showPage('casino')">Andar Bahar</a></li>
+        <li><a href="#" onclick="showPage('casino')">Roulette</a></li>
+        <li><a href="#" onclick="showPage('casino')">Fish Shooting</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+        <li><a href="#" onclick="showPage('promotions')">Promotions</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Responsible Gaming</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Jaya9 Bangladesh. All rights reserved.</span>
+    <div class="footer-badges">
+      <div class="age-badge">18+</div>
+      <span style="color:var(--muted); font-size:0.8rem; font-weight:700;">LICENSED BY CURAÇAO & PAGCOR</span>
+    </div>
+  </div>
+  <p class="footer-disclaimer">
+    ⚠️ Gambling involves risk. Please gamble responsibly. Jaya9 is intended for entertainment purposes for adults aged 18 and above only. If you are experiencing gambling-related problems, please use our responsible gaming tools or contact a professional helpline.
+  </p>
+</footer>
+
+
+</body>
+</html>
