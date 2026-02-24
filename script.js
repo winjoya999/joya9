@@ -41,3 +41,27 @@
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, border-color 0.3s, background 0.3s, box-shadow 0.3s';
     observer.observe(el);
   });
+
+window.addEventListener('load', async function () {
+  // 1. Wait for the Clerk engine to be ready
+  await Clerk.load();
+
+  const joinBtn = document.getElementById('join-btn');
+
+  // 2. Check if user is already logged in
+  if (Clerk.user) {
+    // Change "JOIN NOW" to "MY ACCOUNT" if they are logged in
+    joinBtn.innerText = "MY ACCOUNT";
+    joinBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      Clerk.openUserProfile();
+    });
+  } else {
+    // 3. If not logged in, open the Sign Up window on click
+    joinBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // Stops the page from refreshing
+      Clerk.openSignUp();
+    });
+  }
+});
+
